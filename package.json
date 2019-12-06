@@ -1,0 +1,47 @@
+{
+  "name": "kaiportfoliosite",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://kaiiennn.github.io/portfolio",
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.11.3"
+  },
+  "proxy": "http://localhost:3000/portfolio",
+  "dependencies": {
+    "aws-sdk": "^2.441.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.0.0-beta.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "nodemailer": "^6.1.1",
+    "nodemon": "^1.18.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-mdl": "^1.11.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-spring": "^8.0.27",
+    "reactstrap": "^8.0.0",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "description": "Coded this project from scratch",
+  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
