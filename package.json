@@ -2,7 +2,7 @@
   "name": "kaiportfoliosite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kaiiennn.github.io/portfolio",
+  "homepage": "http://kaiiennn.github.io/",
   "engines": {
     "node": "10.15.1",
     "npm": "6.11.3"
