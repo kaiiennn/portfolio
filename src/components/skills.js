@@ -6,7 +6,7 @@ class Skills extends Component {
     return(
       <Grid>
         <Cell col={12}>
-          <div style={{display: 'block', marginLeft: '5px', marginTop: '-5px', fontSize: '2vh', fontWeight: 'medium'}}>{this.props.skill} <ProgressBar style={{padding: '5px', marginTop: '5px', width: '90%'}} progress={this.props.progress} /> </div>
+          <div style={{display: 'block', marginLeft: '5px', marginTop: '-5px', fontSize: '2vh', fontWeight: 'medium', lineHeight: 'normal'}}>{this.props.skill} <ProgressBar style={{padding: '5px', marginTop: '5px', width: '90%'}} progress={this.props.progress} /> </div>
         </Cell>
       </Grid>
     )

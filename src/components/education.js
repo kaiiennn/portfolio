@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-
 class Education extends Component {
   render() {
     return(
       <Grid>
-        <Cell col={8}>
+        <Cell className="cellEdu" col={8}>
           {/* Education Level */}
           <h1 style={{fontSize:'2.5vh', lineHeight: '2.5vh', fontWeight: 'bold'}}>{this.props.educationLevel}</h1>
 
@@ -14,7 +13,7 @@ class Education extends Component {
           <h2 style={{fontSize:'2vh', lineHeight: '2vh'}}>{this.props.schoolName}</h2>
 
           {/* Location */}
-          <h3 style={{fontSize: '1.5vh', lineHeight: '0.5vh'}}>{this.props.schoolLocation}</h3>
+          <h2 style={{fontSize: '1.5vh', lineHeight: '0.5vh', lineHeight: 'normal'}}>{this.props.schoolLocation}</h2>
 
           {/* Start & End Date */}
           <p style={{fontSize: '1.5vh', lineHeight: '1.8vh'}}>{this.props.schoolStartDate} - {this.props.schoolEndDate}</p>

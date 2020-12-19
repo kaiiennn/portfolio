@@ -13,39 +13,21 @@ import google from '../assets/google.png';
 import orion from '../assets/orion.png';
 import angelhack from '../assets/angelhack.png';
 import educator from '../assets/educator.png';
-
-// const resume = (kaien) => {
-
-//   const [activeTab,setActiveTab] = useeState(0);
-
-//   setActiveTab(1);
-
-//   return(
-//     <div>
-
-//     </div>
-//   )
-// }
-
-// 1.
-// function aFunction(kaien){
-//   return something;
-// }
-
-// 2.
-// const aFunction = (kaien) => {}
-
-// 3. 
-// (kaien) => {}
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faNewspaper, faFacebook } from '@fortawesome/free-solid-svg-icons'
+import { FaRegNewspaper, FaFacebookSquare, FaLinkedin} from 'react-icons/fa';
 
 class Resume extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: 0 };
+    this.state = { 
+      activeTab: 0 
+    };
   }
 
   toggleCategories() {
 
+    
     if(this.state.activeTab === 0){
       return(
         <div className="about-body">
@@ -57,8 +39,6 @@ class Resume extends Component {
 
 
             <p className="para1"> From Singapore <img style={{maxHeight: '5%', maxWidth: '10%', right: '3%'}} src={singaporeflag} alt="sgflag"/></p> 
-            
-
             
             <p className="para1">Strongly passionate about technology</p>
 
@@ -80,7 +60,7 @@ class Resume extends Component {
         <Grid className="education-grid">
           <Cell col={12}>
           <h3 style={{fontSize: '4vh', textAlign: 'center', color: 'grey', fontWeight: 'bold'}}>EDUCATION</h3>
-               
+          <div> 
             <Education
 
               /* Education Level */
@@ -103,10 +83,12 @@ class Resume extends Component {
               schoolDescription1= "Secretary of ORION Special Interest Group (SIG)"
               
               /* Description */
-              schoolDescription2= "Global Entrepreneurial Internship Programme (GEIP) Award Recipient"
-
+              schoolDescription2= "Global Entrepreneurial Internship Programme (GEIP) Award Recipient (Featured in Ngee Ann Polytechnic Social Media and 2019's School News Publication)" 
               />
-
+              <p style={{textAlign: 'center', fontWeight: 'bold'}}>Featured on Ngee Ann's <a href= "https://www.np.edu.sg/publications/Documents/NPNews/2019_2/NPnews_issue2_2019.pdf#page=20" target="_blank" rel="noopener noreferrer"><FaRegNewspaper size='39px'/></a><a href= "https://www.facebook.com/ngeeannpoly/photos/a.385347389797/10157904592514798/?type=3&theater" target="_blank" rel="noopener noreferrer"><FaFacebookSquare size='30px'/></a><a href= "https://www.linkedin.com/posts/ngee-ann-polytechnic_ngeeannpoly-ecommerce-entrepreneurship-activity-6620537824296960000-u4O_" target="_blank" rel="noopener noreferrer"><FaLinkedin size='31px'/></a></p>
+              
+              </div>
+            
               <img className="ngeeannimg" src={preu}
                 alt="loading..."
                />
@@ -361,13 +343,11 @@ class Resume extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>About Me</Tab>
-          <Tab>Education</Tab>
-          <Tab>Experiences</Tab>
-          <Tab>Skills</Tab>
+          <Tab><b>About Me</b></Tab>
+          <Tab><b>Education</b></Tab>
+          <Tab><b>Experiences</b></Tab>
+          <Tab><b>Skills</b></Tab>
         </Tabs>
-
-
           <Grid>
             <Cell col={12}>
               <div className="content">{this.toggleCategories()}</div>

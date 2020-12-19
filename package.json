@@ -9,6 +9,10 @@
   },
   "proxy": "http://localhost:3000/portfolio",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "aws-sdk": "^2.441.0",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
@@ -16,15 +20,19 @@
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "font-awesome": "^4.7.0",
+    "i": "^0.3.6",
     "nodemailer": "^6.1.1",
     "nodemon": "^1.18.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^4.1.0",
     "react-mdl": "^1.11.0",
+    "react-pdf": "^4.1.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-spring": "^8.0.27",
+    "reactjs-popup": "^1.5.0",
     "reactstrap": "^8.0.0",
     "webfontloader": "^1.6.28"
   },
@@ -39,7 +47,7 @@
   "description": "Coded this project from scratch",
   "main": "index.js",
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   },
   "keywords": [],
   "author": "",

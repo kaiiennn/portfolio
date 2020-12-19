@@ -11,11 +11,11 @@ class Landing extends Component {
 
             <img className="img" src={por} alt="loading..." />
             <div className="banner-text"> 
-              <h1 style={{fontSize: '6vh'}}>Hi, I'm <b>Kai En!</b></h1>
+              <h1> Hi, I'm <b style={{color:'#da2c43'}}>Kai En</b>!</h1>
 
             <hr/>
 
-          <p style={{fontSize: '3vh'}}><i><b>Software Developer | Tech Enthusiast</b></i></p>
+          <p><i><b>Software Developer | Tech Enthusiast</b></i></p>
 
         <div className="social-links">
 
